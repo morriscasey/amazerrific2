@@ -1,3 +1,8 @@
+/***
+ * Name: Casey Morris
+ * Description: Displays questions and answers on different tabs.
+ * 
+ */
 var main = function() {
     "use strict";
     
@@ -12,7 +17,6 @@ var main = function() {
         "caramels wafer cotton candy gingerbread.",
         "Cookie gummies chupa chups chupa chups cookie marzipan. Brownie lemon drops cheesecake.candy donut brownie tootsie roll wafer cupcake."
     ];
-    
     
     $(".tabs a span").toArray().forEach(function(element){
         
@@ -30,6 +34,8 @@ var main = function() {
         
             // empty the main content so we can recreate it
             $("main .content").empty();
+            
+            // depending on the tab clicked a conditional is selected and loads the corresponding questions and answer.
             
             if ($element.parent().is(":nth-child(1)")) {
                 var content = $("<h2>");

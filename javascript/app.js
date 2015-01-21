@@ -1,4 +1,8 @@
-
+/***
+ * Name: Casey Morris
+ * Description: Shows an array made up of a "todo" list, displays in a list backward/forward, and adds new entry to array
+ * 
+ */
 var main = function() {
     "use strict";
     
@@ -28,6 +32,7 @@ var main = function() {
             // empty the main content so we can recreate it
             $("main .content").empty();
             
+            // depending on the tab clicked a conditional is selected and loads the corresponding questions and answer.
             if ($element.parent().is(":nth-child(1)")) {
                 var index = toDos.length;
                 var content = $("<ul>");
